@@ -824,41 +824,98 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+@media (max-width: 767px) {
+  .about-mf .box-shadow-full {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+  .about-mf .about-img {
+    margin-bottom: 1.5rem;
+  }
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+  .about-mf .about-img img {
+    margin-left: 0;
+    width: 100%;
+  }
 
-@media (min-width: 767px) {
-  .about-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
+  .about-mf .about-info {
+    text-align: center;
+  }
+
+  .skill-mf .progress {
+    height: 0.5rem;
+  }
+
+  .skill-mf .progress .progress-bar {
+    height: 0.5rem;
+  }
+
+  .navbar-mobile {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  .navbar .dropdown > a {
+    padding-right: 0.5rem;
+  }
+
+  .skill-mf .logos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-mf .box {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
   }
 }
 
-.skill-mf span {
-  color: #4e4e4e;
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-mf .box-shadow-full {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-mf .about-info {
+    text-align: left;
+  }
+
+  .skill-mf .logos-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill-mf .box {
+    width: 48%;
+  }
 }
 
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: 0.5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: 0.7rem;
+@media (min-width: 992px) {
+  .about-mf .box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .about-mf .about-img img {
+    margin-left: 10px;
+    width: auto;
+  }
+
+  .skill-mf .logos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .skill-mf .box {
+    width: 20%;
+    margin: 0.5rem;
+  }
 }
 
-.skill-mf .progress .progress-bar {
-  height: 0.7rem;
-  background-color: #0078ff;
-}
 
 /*--------------------------------------------------------------
 # Services
